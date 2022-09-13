@@ -6,12 +6,13 @@ const spinner = document.querySelector('.spinner')
 
 weaContainer.style.display = 'none'
 ubiContainer.style.display = 'block'
+const api_key = '393d89c18ec222fbaeea1d230c4accc5'
 
 const input = document.querySelector('input')
 let inputLocation = document.querySelector('#input-location')
 input.addEventListener('keyup', (e) => {
      if (e.key == 'Enter' && inputLocation.value != '') {
-          let url = (`https://api.openweathermap.org/data/2.5/weather?q=${inputLocation.value}&units=metric&appid=393d89c18ec222fbaeea1d230c4accc5`);
+          let url = (`https://api.openweathermap.org/data/2.5/weather?q=${inputLocation.value}&units=metric&appid=${api_key}`);
           request(url)
      };
 })

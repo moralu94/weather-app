@@ -22,12 +22,12 @@ body{
      display: block; 
      margin-top: 1em;
      background-color: #f0f0f0;
-     width: 450px;
-     height: 300px;
+     min-width: 28em;
+     min-height: fit-content;
      border-radius: 15px;
      padding: 1em;
      box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.25);
-     max-width: 280px;
+     margin-top: 5em;
 }
 
 .wrap{
@@ -55,6 +55,7 @@ body{
      font-size: 1.2em;
      color: #c1c1c1;
      font-weight: 100;
+     
 }
 
 h2 span{
@@ -110,12 +111,17 @@ button{
      display: none;
      margin-top: 1em;
      background-color: #f0f0f0;
-     width: 450px;
-     height: 480px;
+     /* width: 380px;
+     height: 480px; */
      border-radius: 15px;
      box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.25);
-     max-width: 280px;
-     min-height: 515px;
+     margin-top: 5em;
+     width: 25em;
+     min-width: 18em;
+     min-height: fit-content;
+
+     /* max-width: 280px;
+     min-height: 515px; */
 }
 
 #weather-icon{
@@ -165,6 +171,7 @@ footer{
      position: absolute;
      bottom: 0;
      left: 0;
+     margin: 0;
  }
 
 /* ----------- Spinkit------------ */
