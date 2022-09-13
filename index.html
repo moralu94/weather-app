@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+     <link rel="manifest" href="favicon/site.webmanifest">
+     <title>Weather App</title>
+</head>
+<body>
+     <div class="ubication-container">
+          <h1>Weather App</h1>
+          <div class="wrap">
+               <input type="value" name="location" id="input-location" placeholder=" Enter City Name" >
+               <h2><span>or</span></h2>
+               <button id="btn-geolocation">Get Device Location</button>
+          </div>
+     </div>
+     <div class="spinner"></div>
+     <div class="weather-container">
+          <div class="header">
+               <svg id="back" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <line x1="5" y1="12" x2="19" y2="12" />
+                    <line x1="5" y1="12" x2="11" y2="18" />
+                    <line x1="5" y1="12" x2="11" y2="6" />
+               </svg>
+               <h1>Weather App</h1>
+          </div>
+          <div class="main-info">
+               <img src="" id="weather-icon">
+               <h2 id="temperature"></h2>
+               <h3 id="description"></h3>
+               <h3 id="place">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                         <circle cx="12" cy="11" r="3" />
+                         <path d="M17.657 16.657l-4.243 4.243a2 2 0 0 1 -2.827 0l-4.244 -4.243a8 8 0 1 1 11.314 0z" />
+                    </svg>
+                    </h3>
+          </div>
+          <div class="other-info">
+               <div class="feels-like">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-temperature" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                         <path d="M10 13.5a4 4 0 1 0 4 0v-8.5a2 2 0 0 0 -4 0v8.5" />
+                         <line x1="10" y1="9" x2="14" y2="9" />
+                    </svg>
+                    <div class="info">
+                         <h4 id="fe-temp"></h4>
+                         <h5>Feels Like</h5> 
+                    </div>
+               </div>
+               <div class="humidity">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-droplet" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                         <path d="M6.8 11a6 6 0 1 0 10.396 0l-5.197 -8l-5.2 8z" />
+                    </svg>
+                    <div class="info">
+                         <h4 id="humidity"></h4>
+                         <h5>Humidity</h5>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <footer>
+          <a href="https://github.com/1uum/"><img src="github-colored-seeklogo.com.svg" alt="" width="80" height="80"></a>
+      </footer>
+     <script src="js/main.js"></script>
+</body>
+</html>

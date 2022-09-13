@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+
+body{
+     background: rgb(238,202,7);
+     background: linear-gradient(45deg, rgba(238,202,7,1) 20%, rgba(238,117,7,1) 60%, rgba(178,39,178,1) 100%);
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+}
+
+.ubication-container{
+     display: block; 
+     background-color: #f0f0f0;
+     width: 450px;
+     height: 300px;
+     border-radius: 15px;
+     padding: 1em;
+     box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.25);
+}
+
+.wrap{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 1em;
+}
+
+.ubication-container h1{
+     color: rgb(35, 35, 35); 
+     text-align: center;
+     border-bottom: 1px solid #c1c1c1;
+     margin-bottom: 2em;
+     padding: 0.5em;
+     font-size: 1.5em;
+}
+
+.ubication-container h2{
+     width: 80%; 
+     text-align: center;
+     border-bottom: 1px solid #c1c1c1;
+     line-height: 0.1em;
+     margin: 10px 0 20px;
+     font-size: 1.2em;
+     color: #c1c1c1;
+     font-weight: 100;
+}
+
+h2 span{
+     background:#f0f0f0;
+     padding: 0 10px;
+}
+
+input{
+     border: 1px solid #c1c1c1;
+     border-radius: 5px;
+     background-color: #f0f0f0;
+     width: 80%;
+     height: 2.5em;
+     color: #000000;
+     font-size: 1em;
+}
+
+input:focus, input:active{
+     outline: 3px solid rgb(50, 190, 188); ;
+}
+
+button{
+     background-color: rgb(50, 190, 188);
+     border-radius: 5px;
+     border: none;
+     width: 80%;
+     height: 3em;
+     font-size: 1em;
+     color: #f0f0f0;
+     cursor: pointer;
+}
+
+/* ---------------- weather ---------------- */
+
+.header{
+     display: flex;
+     align-items: center;
+     border-bottom: 1px solid #c1c1c1;
+     padding: 0.5em;
+     gap: 6.5em;
+}
+
+.header h1{
+     color: rgb(35, 35, 35); 
+     font-size: 1.5em;
+}
+
+.header svg{
+     cursor: pointer;
+}
+
+.weather-container{
+     display: none;
+     background-color: #f0f0f0;
+     width: 450px;
+     height: 480px;
+     border-radius: 15px;
+     box-shadow: 0px 0px 20px 10px rgba(0,0,0,0.25);
+}
+
+#weather-icon{
+     width: 170px;
+     height: 170px;
+}
+
+.main-info{
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 0.5em;
+     margin-bottom: 1.65em;
+}
+
+.other-info{
+     display: flex;
+     align-items: center;
+     border-top: 1px solid #c1c1c1;
+     width: 100%;
+     justify-content: flex-end;
+}
+
+.feels-like, .humidity{
+     width: 100%;
+     display: flex;
+     gap: 1em;
+     padding: 1em;
+}
+
+.feels-like{
+     border-right: 1px solid #c1c1c1;
+     align-items: center;
+     justify-content: center;
+}
+
+.humidity{
+     align-items: center;
+     justify-content: center;
+}
+
+h2 {
+     font-size: 3em;
+}
+
+footer{
+     position: absolute;
+     bottom: 0;
+     left: 0;
+ }
+
+/* ----------- Spinkit------------ */
+
+.spinner {
+     display: none;
+     width: 40px;
+     height: 40px;
+     margin: 100px auto;
+     background-color: rgb(238, 238, 238);
+   
+     border-radius: 100%;  
+     -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+     animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+   
+@-webkit-keyframes sk-scaleout {
+     0% { -webkit-transform: scale(0) }
+     100% {
+       -webkit-transform: scale(1.0);
+       opacity: 0;
+     }
+}
+   
+ @keyframes sk-scaleout {
+     0% { 
+       -webkit-transform: scale(0);
+       transform: scale(0);
+     } 100% {
+       -webkit-transform: scale(1.0);
+       transform: scale(1.0);
+       opacity: 0;
+     }
+}
