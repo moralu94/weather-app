@@ -1,6 +1,6 @@
 # Weather App
 
-### [ Live Preview ]()
+### [ Live Preview ](https://1uum.github.io/weather-app/)
 
 ### Documentation: 
 [Open Weather Map API](https://openweathermap.org/)
