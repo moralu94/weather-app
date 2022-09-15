@@ -11,6 +11,8 @@
      <title>Weather App</title>
 </head>
 <body>
+     <div class="error-message"><p id="msg"></p></div>
+
      <div class="ubication-container">
           <h1>Weather App</h1>
           <div class="wrap">
@@ -19,7 +21,9 @@
                <button id="btn-geolocation">Get Device Location</button>
           </div>
      </div>
+
      <div class="spinner"></div>
+
      <div class="weather-container">
           <div class="header">
                <svg id="back" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-arrow-left" width="32" height="32" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -66,9 +70,10 @@
                </div>
           </div>
      </div>
+     
      <footer>
           <a href="https://github.com/1uum/weather-app"><img src="github-colored-seeklogo.com.svg" alt="" width="80" height="70"></a>
-      </footer>
+     </footer>
      <script src="js/main.js"></script>
 </body>
 </html>

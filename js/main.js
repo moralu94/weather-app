@@ -3,6 +3,8 @@ const weaContainer = document.querySelector('.weather-container')
 const back = document.querySelector('#back')
 const btnGeolocation = document.querySelector('#btn-geolocation')
 const spinner = document.querySelector('.spinner')
+const msg = document.querySelector('#msg')
+const errorMsg = document.querySelector('.error-message')
 
 weaContainer.style.display = 'none'
 ubiContainer.style.display = 'block'
@@ -28,7 +30,10 @@ btnGeolocation.addEventListener('click' , () => {
           request (url)
      }
      function error (err) {
-          if (err.code == err.PERMISSION_DENIED) { window.alert('Geolocation Denied. Check your settings.') }
+          if (err.code == err.PERMISSION_DENIED) { 
+               errorMsg.style.display = 'block'
+               msg.textContent = 'Geolocation Denied. Please check your settings.' 
+          }
      }
 })
 
@@ -39,8 +44,12 @@ function request (url){
           return response.json()
      })
      .then ( data =>{
-          if (data.message == 'city not found') window.alert('City not found. Please check the field.')
+          if (data.message == 'city not found') {
+               errorMsg.style.display = 'block'
+               msg.textContent = 'City not found. Please check the field.'
+          }
           else {
+               if (errorMsg.style.display = 'block') errorMsg.style.display = 'none';
                console.log(data);
                changeContainer()
                loadData(data)
